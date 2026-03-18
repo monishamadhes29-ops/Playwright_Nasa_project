@@ -3,7 +3,7 @@ const { chromium } = require("@playwright/test")
 setDefaultTimeout(60000)
 Before(async function () {
 
-  this.browser = await chromium.launch({ headless: false })
+  this.browser = await chromium.launch({ headless: process.env.CI ? true : false })
 
   this.context = await this.browser.newContext()
 
@@ -16,7 +16,10 @@ After(async function () {
   await this.page.close()
 
   await this.context.close()
-
-  await this.browser.close()
+if (this.browser) {
+    await this.browser.close()
+  }
+  
+  
 
 })
