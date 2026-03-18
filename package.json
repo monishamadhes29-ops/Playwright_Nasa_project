@@ -1,0 +1,27 @@
+{
+  "name": "playwright_nasa_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+  "report": "node src/utils/reportGenerator.js",
+  "test:report": "cucumber-js && node src/utils/reportGenerator.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.13.6",
+    "playwright": "^1.58.2",
+    "winston": "^3.19.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.7.0",
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0",
+    "chai": "^6.2.2",
+    "cucumber-html-reporter": "^6.0.0"
+  }
+}

@@ -1,0 +1,14 @@
+{"level":"error","message":"Error typing text: locator.fill: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('input[type=\\'search\\']')\u001b[22m\n"}
+{"level":"error","message":"Error typing text: locator.fill: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('input[type=\\'search\\']')\u001b[22m\n"}
+{"level":"error","message":"Error typing text: locator.fill: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('input[type=\\'search\\']')\u001b[22m\n"}
+{"level":"info","message":"Results count: 0"}
+{"level":"error","message":"Failed to open first result: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('.result').first()\u001b[22m\n"}
+{"level":"info","message":"Results count: 0"}
+{"level":"error","message":"Failed to open first result: WaitUtils is not defined"}
+{"level":"info","message":"Image loaded successfully"}
+{"level":"info","message":"Results count: 0"}
+{"level":"error","message":"Failed to open first result: WaitUtils is not defined"}
+{"level":"info","message":"Image loaded successfully"}
+{"level":"info","message":"Results count: 0"}
+{"level":"error","message":"Failed to open first result: WaitUtils is not defined"}
+{"level":"info","message":"Image loaded successfully"}

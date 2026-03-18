@@ -1,0 +1,383 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "nasa-api-validation;search-images-api",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Search images API",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 331801000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user calls NASA search API with \"moon\"",
+            "match": {
+              "location": "tests\\stepdefinitions\\NasaSteps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2301351400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "API returns title and nasa_id",
+            "match": {
+              "location": "tests\\stepdefinitions\\NasaSteps.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1981900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 251773799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "nasa-api-validation;asset-api-validation",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Asset API validation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 383740299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "user gets asset details",
+            "match": {
+              "location": "tests\\stepdefinitions\\NasaSteps.js:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1125152200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "asset API should return downloadable URL",
+            "match": {
+              "location": "tests\\stepdefinitions\\NasaSteps.js:94"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2725100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 264173999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "nasa-api-validation;negative-api-test",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Negative API test",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 359756800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "user calls invalid search",
+            "match": {
+              "location": "tests\\stepdefinitions\\NasaSteps.js:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 844701599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "API should return zero results",
+            "match": {
+              "location": "tests\\stepdefinitions\\NasaSteps.js:146"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1348100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 283306800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "nasa-api-validation",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "NASA API Validation",
+    "tags": [],
+    "uri": "src\\features\\nasaAPI.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "api-ui-integration;validate-api-and-ui-consistency",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Validate API and UI consistency",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 331630500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user calls NASA search API with \"moon\"",
+            "match": {
+              "location": "tests\\stepdefinitions\\NasaSteps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1194716300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user navigates to NASA website",
+            "match": {
+              "location": "tests\\stepdefinitions\\NasaSteps.js:171"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14812181200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "user searches for \"moon\"",
+            "match": {
+              "location": "tests\\stepdefinitions\\NasaSteps.js:201"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6024600300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "UI title should match API title",
+            "match": {
+              "location": "tests\\stepdefinitions\\NasaSteps.js:312"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5284555199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 366189899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "api-ui-integration",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "API UI Integration",
+    "tags": [],
+    "uri": "src\\features\\nasaIntegration.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "nasa-ui-search;search-moon-images",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Search moon images",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 352250400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user navigates to NASA website",
+            "match": {
+              "location": "tests\\stepdefinitions\\NasaSteps.js:171"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14409262999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user searches for \"moon\"",
+            "match": {
+              "location": "tests\\stepdefinitions\\NasaSteps.js:201"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4819696799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "at least 5 results should appear",
+            "match": {
+              "location": "tests\\stepdefinitions\\NasaSteps.js:222"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15600500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user opens first result",
+            "match": {
+              "location": "tests\\stepdefinitions\\NasaSteps.js:241"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1553064800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "title should be visible",
+            "match": {
+              "location": "tests\\stepdefinitions\\NasaSteps.js:261"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13322399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "preview image should load",
+            "match": {
+              "location": "tests\\stepdefinitions\\NasaSteps.js:285"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4971599000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 327644800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@apiTest",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "nasa-ui-search",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "NASA UI Search",
+    "tags": [],
+    "uri": "src\\features\\nasaUI.feature"
+  }
+]
